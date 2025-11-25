@@ -6,7 +6,8 @@
  
 .container div {
   background-color: #000000;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   width: auto;
   margin: auto;
   padding: auto;
