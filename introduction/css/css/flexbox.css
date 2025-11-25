@@ -6,6 +6,7 @@
  
 .container div {
   background-color: #f1f1f1;
+  display: block;
   width: auto;
   margin: auto;
   padding: auto;
