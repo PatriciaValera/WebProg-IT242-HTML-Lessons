@@ -5,7 +5,6 @@
 }
  
 .container div {
-  background-color: #dcd0ff;
-  display: flex;
+  background-color: #f1f1f1;
   flex-wrap: wrap;
 }
