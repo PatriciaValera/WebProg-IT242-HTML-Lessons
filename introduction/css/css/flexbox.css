@@ -7,7 +7,7 @@
 .container div {
   background-color: #000000;
   display: block;
-  width: auto;
-  margin: auto;
-  padding: auto;
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
 }
