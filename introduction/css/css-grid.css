@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: #dcd0ff;
-  padding: 5px;
-  gap: 5px;
+  padding: 30px;
+  gap: 30px;
 }
 .container div {
   background-color: #000000;
