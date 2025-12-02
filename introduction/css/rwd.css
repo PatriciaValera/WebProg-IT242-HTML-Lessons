@@ -5,6 +5,7 @@
 body {
   font-family: "Lucida Sans", sans-serif;
   font-size: 17px;
+  text-align: center;
 }
 
 .grid-container {
@@ -15,7 +16,7 @@ body {
     'main'
     'facts'
     'footer';
-  background-color: white;
+  background-color: #dcd0ff;
   gap: 10px;  
 }
 
@@ -23,7 +24,7 @@ body {
   grid-area: header;
   background-color: #dcd0ff;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
 }
 
 .header > h1 {
