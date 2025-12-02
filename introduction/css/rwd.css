@@ -21,7 +21,7 @@ body {
  
 .header {
   grid-area: header;
-  background-color: purple;
+  background-color: #dcd0ff;
   text-align: center;
   color: #ffffff;
 }
@@ -43,12 +43,12 @@ body {
 .menu li {
   padding: 8px;
   margin-bottom: 7px;
-  background-color: #33b5e5;
+  background-color: #dcd0ff;
   color: #ffffff;
 }
  
 .menu li:hover {
-  background-color: #0099cc;
+  background-color: #c1adfd;
 }
  
 .content {
