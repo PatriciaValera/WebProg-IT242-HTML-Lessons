@@ -21,7 +21,7 @@ body {
 
 .header {
   grid-area: header;
-  background-color: purple;
+  background-color: #a080ff;
   text-align: center;
   color: #ffffff;
 }
@@ -58,13 +58,14 @@ body {
 .content > h1 {
   font-size: 30px;
   margin-bottom: 7px;
+   text-align: center;
 }
 
 .content > p {
   margin-bottom: 7px;
 }
 
-.facts {
+.pic {
   grid-area: facts;
   border: 1px solid #a080ff;
   background-color: rgb(0, 0, 0);
@@ -73,10 +74,6 @@ body {
 
 .facts > h2 {
   font-size: 20px;
-}
-
-.facts li {
-  margin-bottom: 5px;
 }
 
 .footer {
