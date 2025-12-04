@@ -81,8 +81,8 @@ body {
  
 .footer {
   grid-area: footer;
-  background-color: #0099cc;
-  color: #ffffff;
+  background-color: #dcd0ff;
+  color: #000000;
   text-align: center;
 }
  
