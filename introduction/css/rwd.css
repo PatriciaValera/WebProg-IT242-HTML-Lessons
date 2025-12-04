@@ -66,12 +66,12 @@ body {
  
 .pic {
   grid-area: facts;
-  border: 1px solid #0099cc;
-  background-color: beige;
+  border: 1px solid #c1adfd;
+  background-color: #ffffff;
   padding: 10px;
 }
  
-.facts > h2 {
+.pic > h2 {
   font-size: 20px;
 }
  
