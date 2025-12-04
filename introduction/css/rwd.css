@@ -43,8 +43,9 @@ body {
 .menu li {
   padding: 8px;
   margin-bottom: 7px;
+  margin-left: 7px;
   background-color: #dcd0ff;
-  color: #ffffff;
+  color: #000000;
 }
  
 .menu li:hover {
@@ -58,13 +59,15 @@ body {
 .content > h1 {
   font-size: 30px;
   margin-bottom: 7px;
+  margin-left: 7px
 }
  
 .content > p {
   margin-bottom: 7px;
+  margin-left: 7px
 }
  
-.facts {
+.pic {
   grid-area: facts;
   border: 1px solid #0099cc;
   background-color: beige;
@@ -73,10 +76,6 @@ body {
  
 .facts > h2 {
   font-size: 20px;
-}
- 
-.facts li {
-  margin-bottom: 5px;
 }
  
 .footer {
