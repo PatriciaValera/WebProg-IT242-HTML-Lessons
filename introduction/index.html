@@ -1,28 +1,264 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Tricia mae's and Niña's Introduction</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lilly — Interior Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f0f11;
+      --panel:#15161a;
+      --muted:#a9adb8;
+      --text:#ffffff;
+      --accent:#000000;
+      --btn:#000000;
+      --btnText:#ffffff;
+      --brand:#f2b705; /* warm highlight for subtle accents */
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:linear-gradient(180deg,#0e0f12 0%, #121316 100%);
+      color:var(--text);
+    }
+
+    /* Layout container */
+    .wrap{
+      max-width:1200px;
+      margin:0 auto;
+      padding:32px 24px 56px;
+    }
+
+    /* Header / intro card */
+    .intro{
+      display:grid;
+      grid-template-columns: 160px 1fr 320px;
+      gap:24px;
+      align-items:center;
+      background:var(--panel);
+      border:1px solid #1f2127;
+      border-radius:20px;
+      padding:24px;
+    }
+    .avatar{
+      width:160px;
+      height:160px;
+      border-radius:50%;
+      overflow:hidden;
+      border:3px solid #22252c;
+      background:#0b0c0e;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .avatar img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .hello{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+    }
+    .hello .tag{
+      font-weight:600;
+      color:var(--muted);
+      letter-spacing:0.2px;
+    }
+    .hello .name{
+      font-size:20px;
+      font-weight:700;
+    }
+    .hero{
+      background:linear-gradient(180deg,#16171c 0%, #13141a 100%);
+      border:1px solid #1f2127;
+      border-radius:16px;
+      padding:20px;
+    }
+    .hero h1{
+      margin:0 0 10px 0;
+      font-size:36px;
+      line-height:1.15;
+      letter-spacing:-0.5px;
+    }
+    .hero p{
+      margin:0 0 16px 0;
+      color:var(--muted);
+      max-width:42ch;
+    }
+    .hero .cta{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      background:var(--btn);
+      color:var(--btnText);
+      border:none;
+      border-radius:999px;
+      padding:12px 18px;
+      font-weight:600;
+      cursor:pointer;
+      transition:transform .08s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .hero .cta:hover{
+      transform:translateY(-1px);
+      box-shadow:0 8px 20px rgba(0,0,0,.35);
+      background:#0a0a0a;
+    }
+
+    /* Grid of work + stats */
+    .grid{
+      margin-top:28px;
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:18px;
+    }
+    .card{
+      position:relative;
+      border-radius:16px;
+      overflow:hidden;
+      background:#0d0e12;
+      border:1px solid #1f2127;
+      min-height:220px;
+    }
+    .card img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      filter:saturate(0.95) contrast(1.05);
+      transition:transform .25s ease;
+    }
+    .card:hover img{
+      transform:scale(1.02);
+    }
+    .stat{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:flex-start;
+      gap:6px;
+      padding:18px;
+      height:100%;
+      background:linear-gradient(180deg,#17181e 0%, #13141a 100%);
+    }
+    .stat .value{
+      font-size:28px;
+      font-weight:700;
+      letter-spacing:-0.3px;
+    }
+    .stat .label{
+      color:var(--muted);
+      font-weight:600;
+    }
+
+    /* Footer */
+    .foot{
+      margin-top:28px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      color:var(--muted);
+      font-size:14px;
+      padding:12px 4px;
+    }
+    .foot a{
+      color:#d7dbeb;
+      text-decoration:none;
+      border-bottom:1px dashed #2a2d36;
+    }
+    .foot a:hover{color:#ffffff; border-color:#444957}
+
+    /* Responsive */
+    @media (max-width:1024px){
+      .intro{
+        grid-template-columns: 140px 1fr;
+      }
+      .hero{grid-column:1 / -1}
+    }
+    @media (max-width:760px){
+      .wrap{padding:24px 16px 40px}
+      .intro{
+        grid-template-columns: 100px 1fr;
+        gap:18px;
+        padding:18px;
+      }
+      .avatar{width:100px;height:100px}
+      .hero h1{font-size:28px}
+      .grid{
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width:480px){
+      .grid{
+        grid-template-columns: 1fr;
+      }
+      .hero p{max-width:100%}
+    }
+  </style>
 </head>
 <body>
-<h1>Trisha mae and Niña Personal Profile Web page </h1>
-<p>
-About Us Yehey<br>
-Name: Patricia Marie D. Valera<br>
-Nickname: Tricia<br>
-Name: Niña Arcel R. Ramos<br>
-Nickname: Nins<br>
- 
-Education / Achievements<br>
-Course: Bachelor of Science in Information Technology<br>
-IT Experience: Gaming, MySQL Workbench, OutSystems<br>
-Hobbies & Interests<br>
-  - Listening to music<br>
-  - Watching movies, animes, series<br>
-  - Reading novels, manhwa, wattpad<br>
-Picture Gallery<br>
-<img src="https://i.pinimg.com/originals/aa/29/e9/aa29e9cae0a07ebf8444331813e8aba0.jpg" alt="kuromi" width="500" height="600">
-<img src="https://bookstr.com/wp-content/uploads/2022/09/Sally-in-pink-dress.jpg" alt="sally" width="200" height="200" />
-</p>
+  <main class="wrap">
+    <!-- Intro / identity -->
+    <section class="intro" aria-label="Intro">
+      <div class="avatar" aria-hidden="true">
+        <!-- Replace with Lilly's profile photo -->
+        <img src="https://images.unsplash.com/photo-1525134479668-5b2c6ae5bbb3?q=80&w=400&auto=format&fit=crop" alt="Portrait of Lilly, interior designer">
+      </div>
+      <div class="hello">
+        <div class="tag">Hey, I’m Lilly</div>
+        <div class="name">Interior Designer</div>
+      </div>
+      <div class="hero">
+        <h1>Designing spaces, defining style</h1>
+        <p>An interior designer passionate about transforming spaces into beautiful, functional, and inspiring environments.</p>
+        <button class="cta" aria-label="Get it now">
+          GET IT NOW
+        </button>
+      </div>
+    </section>
 
+    <!-- Work / stats grid -->
+    <section class="grid" aria-label="Portfolio and stats">
+      <!-- Photo cards: replace image URLs with Lilly's portfolio images -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1200&auto=format&fit=crop" alt="Sunlit living room with modern furniture and warm textures">
+      </article>
+      <article class="card stat" aria-label="Experience">
+        <div class="value">8+ Years</div>
+        <div class="label">Experience</div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1505691723518-36a9a3aa9156?q=80&w=1200&auto=format&fit=crop" alt="Minimal kitchen with marble island and wood accents">
+      </article>
+
+      <article class="card stat" aria-label="Homes designed">
+        <div class="value">50+</div>
+        <div class="label">Homes designed</div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1200&auto=format&fit=crop" alt="Calm bedroom with layered textiles and natural light">
+      </article>
+      <article class="card stat" aria-label="Projects and customers">
+        <div class="value">150+ Projects</div>
+        <div class="label">Completed</div>
+        <div class="value" style="margin-top:10px">120+ Clients</div>
+        <div class="label">Happy customers</div>
+      </article>
+    </section>
+
+    <!-- Footer / contact hint -->
+    <footer class="foot" aria-label="Footer">
+      <div>© Lilly — Interior Design</div>
+      <div>
+        <a href="#" aria-label="View portfolio">View portfolio</a> ·
+        <a href="#" aria-label="Contact Lilly">Contact</a>
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
