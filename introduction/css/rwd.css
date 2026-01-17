@@ -48,7 +48,7 @@ body {
 }
  
 .menu li:hover {
-  background-color: #c1adfd;
+  background-color: #bca6ff;
 }
  
 .content {
@@ -66,8 +66,8 @@ body {
  
 .facts {
   grid-area: facts;
-  border: 1px solid #dcd0ff;
-  background-color: rgb(0, 0, 0);
+  border: 1px solid #0099cc;
+  background-color: #ffffff;
   padding: 10px;
 }
  
@@ -82,7 +82,7 @@ body {
 .footer {
   grid-area: footer;
   background-color: #dcd0ff;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
 }
  
