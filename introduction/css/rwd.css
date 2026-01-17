@@ -23,7 +23,7 @@ body {
   grid-area: header;
   background-color: #dcd0ff;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
 }
  
 .header > h1 {
@@ -44,11 +44,11 @@ body {
   padding: 8px;
   margin-bottom: 7px;
   background-color: #dcd0ff;
-  color: #000000;
+  color: #ffffff;
 }
  
 .menu li:hover {
-  background-color: #cdbdff;
+  background-color: #c1adfd;
 }
  
 .content {
@@ -66,7 +66,7 @@ body {
  
 .facts {
   grid-area: facts;
-  border: 1px solid #000000;
+  border: 1px solid #0099cc;
   background-color: beige;
   padding: 10px;
 }
@@ -75,10 +75,14 @@ body {
   font-size: 20px;
 }
  
+.facts li {
+  margin-bottom: 5px;
+}
+ 
 .footer {
   grid-area: footer;
-  background-color: #dcd0ff;
-  color: #000000;
+  background-color: #0099cc;
+  color: #ffffff;
   text-align: center;
 }
  
