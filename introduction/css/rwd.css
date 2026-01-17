@@ -23,7 +23,7 @@ body {
   grid-area: header;
   background-color: #dcd0ff;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
 }
  
 .header > h1 {
@@ -44,7 +44,7 @@ body {
   padding: 8px;
   margin-bottom: 7px;
   background-color: #dcd0ff;
-  color: #ffffff;
+  color: #000000;
 }
  
 .menu li:hover {
@@ -66,8 +66,8 @@ body {
  
 .facts {
   grid-area: facts;
-  border: 1px solid #0099cc;
-  background-color: beige;
+  border: 1px solid #dcd0ff;
+  background-color: rgb(0, 0, 0);
   padding: 10px;
 }
  
@@ -81,7 +81,7 @@ body {
  
 .footer {
   grid-area: footer;
-  background-color: #0099cc;
+  background-color: #dcd0ff;
   color: #ffffff;
   text-align: center;
 }
